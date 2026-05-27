@@ -6,6 +6,7 @@ function Footer() {
 
         <div>
           <h1 className="text-2xl font-bold">CRED</h1>
+
           <p className="text-gray-400 mt-4">
             Premium fintech experience.
           </p>

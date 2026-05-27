@@ -1,8 +1,15 @@
+import { motion } from "framer-motion"
 import { FaLock } from "react-icons/fa"
 
 function Security() {
   return (
-    <section className="bg-[#111] text-white py-24 px-6">
+    <motion.section
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="bg-[#111] text-white py-24 px-6"
+    >
 
       <div className="max-w-5xl mx-auto text-center">
 
@@ -19,7 +26,7 @@ function Security() {
 
       </div>
 
-    </section>
+    </motion.section>
   )
 }
 

@@ -1,4 +1,84 @@
 @import "tailwindcss";
+
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+  font-family: 'Outfit', sans-serif;
+}
+
+* {
+  transition: all 0.3s ease;
+}
+
+/* Floating animation */
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+/* Rotate animation */
+@keyframes rotateSlow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Shiny text animation */
+@keyframes shine {
+  0% {
+    background-position: -200%;
+  }
+
+  100% {
+    background-position: 200%;
+  }
+}
+
+.float-animation {
+  animation: float 5s ease-in-out infinite;
+}
+
+.rotate-animation {
+  animation: rotateSlow 20s linear infinite;
+}
+
+.shine-text {
+  background: linear-gradient(
+    90deg,
+    #ffffff,
+    #888888,
+    #ffffff
+  );
+
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  animation: shine 4s linear infinite;
+}
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+
+  to {
+    transform: translateX(-100%);
+  }
 }

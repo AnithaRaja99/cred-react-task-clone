@@ -1,11 +1,14 @@
 import { motion } from "framer-motion"
+
 function About() {
   return (
     <motion.section
- initial={{ opacity: 0, y: 100 }}
- whileInView={{ opacity: 1, y: 0 }}
- transition={{ duration: 1 }}
- viewport={{ once: true }}className="bg-black text-white py-24 px-6">
+      initial={{ opacity: 0, y: 100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1 }}
+      viewport={{ once: true }}
+      className="bg-black text-white py-24 px-6"
+    >
 
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
 
@@ -27,7 +30,7 @@ function About() {
             and seamless financial management.
           </p>
 
-          <button className="mt-8 bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-105 transition">
+          <button className="mt-8 bg-white text-black px-6 py-3 rounded-full font-semibold hover:scale-110 transition duration-300">
             Explore More
           </button>
         </div>
